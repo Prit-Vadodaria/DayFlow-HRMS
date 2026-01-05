@@ -4,63 +4,63 @@
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                         FRONTEND (React)                         │
+│                         FRONTEND (React)                        │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐         │
-│  │   Pages      │  │  Components  │  │   Context    │         │
-│  │              │  │              │  │              │         │
-│  │ • Dashboard  │  │ • Sidebar    │  │ • AuthContext│         │
-│  │ • Employees  │  │ • Layout     │  │              │         │
-│  │ • Attendance │  │ • Cards      │  │              │         │
-│  │ • Leaves     │  │ • Modals     │  │              │         │
-│  │ • Payroll    │  │ • Forms      │  │              │         │
-│  │ • Profile    │  │              │  │              │         │
-│  └──────┬───────┘  └──────────────┘  └──────┬───────┘         │
+│                                                                 │
+│  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐           │
+│  │   Pages      │  │  Components  │  │   Context    │           │
+│  │              │  │              │  │              │           │
+│  │ • Dashboard  │  │ • Sidebar    │  │ • AuthContext│           │
+│  │ • Employees  │  │ • Layout     │  │              │           │
+│  │ • Attendance │  │ • Cards      │  │              │           │
+│  │ • Leaves     │  │ • Modals     │  │              │           │
+│  │ • Payroll    │  │ • Forms      │  │              │           │
+│  │ • Profile    │  │              │  │              │           │
+│  └──────┬───────┘  └──────────────┘  └──────┬───────┘           │
 │         │                                    │                  │
 │         └────────────────┬───────────────────┘                  │
 │                          │                                      │
 │                          ▼                                      │
-│              ┌───────────────────────┐                         │
-│              │   Services Layer      │                         │
-│              │                       │                         │
-│              │  • firestore.js       │                         │
-│              │  • migration.js       │                         │
-│              └───────────┬───────────┘                         │
+│              ┌───────────────────────┐                          │
+│              │   Services Layer      │                          │
+│              │                       │                          │
+│              │  • firestore.js       │                          │
+│              │  • migration.js       │                          │
+│              └───────────┬───────────┘                          │
 │                          │                                      │
 │                          ▼                                      │
-│              ┌───────────────────────┐                         │
-│              │   Firebase Config     │                         │
-│              │                       │                         │
-│              │  • firebase.js        │                         │
-│              │  • Environment Vars   │                         │
-│              └───────────┬───────────┘                         │
+│              ┌───────────────────────┐                          │
+│              │   Firebase Config     │                          │
+│              │                       │                          │
+│              │  • firebase.js        │                          │
+│              │  • Environment Vars   │                          │
+│              └───────────┬───────────┘                          │
 │                          │                                      │
 └──────────────────────────┼──────────────────────────────────────┘
                            │
                            │ HTTPS
                            │
 ┌──────────────────────────▼──────────────────────────────────────┐
-│                    FIREBASE BACKEND                              │
+│                    FIREBASE BACKEND                             │
 ├─────────────────────────────────────────────────────────────────┤
-│                                                                  │
-│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────┐ │
-│  │  Authentication  │  │  Cloud Firestore │  │   Storage    │ │
-│  │                  │  │                  │  │              │ │
-│  │ • Email/Password │  │ Collections:     │  │ • Files      │ │
-│  │ • User Sessions  │  │  - users         │  │ • Images     │ │
-│  │ • Password Reset │  │  - attendance    │  │ • Documents  │ │
-│  │ • Token Auth     │  │  - leaves        │  │              │ │
-│  │                  │  │  - payroll       │  │              │ │
-│  └──────────────────┘  └──────────────────┘  └──────────────┘ │
-│                                                                  │
-│  ┌──────────────────────────────────────────────────────────┐  │
-│  │              Security Rules Engine                        │  │
-│  │  • Role-based access control                             │  │
-│  │  • Data validation                                        │  │
-│  │  • Authentication checks                                  │  │
-│  └──────────────────────────────────────────────────────────┘  │
-│                                                                  │
+│                                                                 │
+│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────┐   │
+│  │  Authentication  │  │  Cloud Firestore │  │   Storage    │   │
+│  │                  │  │                  │  │              │   │
+│  │ • Email/Password │  │ Collections:     │  │ • Files      │   │
+│  │ • User Sessions  │  │  - users         │  │ • Images     │   │
+│  │ • Password Reset │  │  - attendance    │  │ • Documents  │   │
+│  │ • Token Auth     │  │  - leaves        │  │              │   │ 
+│  │                  │  │  - payroll       │  │              │   │
+│  └──────────────────┘  └──────────────────┘  └──────────────┘   │
+│                                                                 │
+│  ┌──────────────────────────────────────────────────────────┐   │
+│  │              Security Rules Engine                       │   │
+│  │  • Role-based access control                             │   │
+│  │  • Data validation                                       │   │
+│  │  • Authentication checks                                 │   │
+│  └──────────────────────────────────────────────────────────┘   │
+│                                                                 │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
@@ -498,4 +498,5 @@ App
 ---
 
 This architecture provides a scalable, secure, and maintainable foundation for the Dayflow HRMS application!
+
 
