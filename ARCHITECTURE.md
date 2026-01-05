@@ -272,7 +272,6 @@ dayflow-web/
 │   │   └── Profile.jsx
 │   │
 │   ├── services/                  # Business logic
-│   │   ├── db.js                 # ⚠️ OLD - LocalStorage (deprecated)
 │   │   └── firestore.js          # 🔥 NEW - Firestore operations
 │   │
 │   ├── utils/                     # Utility functions
@@ -499,3 +498,4 @@ App
 ---
 
 This architecture provides a scalable, secure, and maintainable foundation for the Dayflow HRMS application!
+
